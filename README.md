@@ -27,10 +27,9 @@ The typical structure of our Chrome extension project is as follows:
 ├── popup.js
 ├── page2.html
 ├── page2.js
-└── icons
-    ├── icon16.png
-    ├── icon48.png
-    └── icon128.png
+├── icon16.png
+├── icon48.png
+└── icon128.png
 ```
 
 ## manifest.json
