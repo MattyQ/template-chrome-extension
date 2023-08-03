@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Chrome Extension</title>
+    <style>
+        /* Basic styling for the popup */
+        body {
+            width: 200px;  /* Fixed width for the popup */
+            height: 300px; /* Fixed height for the popup */
+            padding: 10px; /* Padding around the popup content */
+        }
+        /* Styling for the list of links */
+        ul {
+            list-style-type: none; /* No bullet points for the list */
+            padding: 0; /* No padding around the list */
+        }
+        /* Styling for the list items */
+        li > a {
+            cursor: pointer; /* Show a hand cursor when hovering over the links */
+            text-decoration: underline; /* Underline the links */
+        }
+        /* Styling for the content area */
+        #content {
+            margin-top: 15px; /* Space above the content area */
+            border: 1px solid #ddd; /* Border around the content area */
+            padding: 10px; /* Padding inside the content area */
+            overflow: auto; /* Add scrollbars if the content overflows */
+            height: 200px; /* Fixed height for the content area */
+        }
+    </style>
+</head>
+<body>
+    <!-- The heading of the popup -->
+    <h1>My Extension</h1>
+    <!-- The list of links to various functions of the extension -->
+    <ul>
+        <li><a id="readContent">Read Current Tab Content</a></li> <!-- Link to read the content of the current tab -->
+        <li><a id="writeContent">Write New Element to DOM</a></li> <!-- Link to write a new element to the DOM -->
+        <li><a id="insertText">Insert Text at Cursor Position</a></li> <!-- Link to insert text at the cursor position -->
+        <li><a id="sendMessage">Send Message to Background Script</a></li> <!-- Link to send a message to the background script -->
+        <li><a id="changeBgColor">Change Background Color</a></li> <!-- Link to change the background color of the current tab -->
+        <li><a id="goToPage2">Go to Page 2</a></li> <!-- Link to go to another page of the popup -->
+    </ul>
+    <!-- The area where content can be displayed -->
+    <div id="content"></div>
+    <!-- The script that handles the actions of the links -->
+    <script src="popup.js"></script>
+</body>
+</html>
